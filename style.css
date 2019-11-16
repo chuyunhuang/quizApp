@@ -1,0 +1,80 @@
+*, *::before, *::after{
+  box-sizing: border-box
+}
+
+:root{
+--hue-neutral:45;
+--hue-wrong:0;
+--hue-correct:105;
+}
+
+body{
+  --hue: var(--hue-neutral);
+  padding:0;
+  margin:0;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 80%);
+}
+
+body.correct{
+  --hue: var(--hue-correct);
+}
+
+body.wrong{
+  --hue:var(--hue-wrong);
+}
+
+.container{
+  width: 800px;
+  max-width: 90%;
+  background-color:#efff;
+  border-radius:10px;
+  padding:10px;
+}
+
+.btn-grid{
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  margin: 20px 0
+}
+
+.btn{
+  border:none;
+  --hue: var(--hue-neutral);
+  background-color: hsl(var(--hue), 100%, 60%);
+  border-radius:10px;
+  padding:10px;
+}
+
+.btn:hover{
+  border-color:black;
+}
+
+.btn.correct{
+  --hue: var(--hue-correct);
+}
+
+.btn.wrong{
+  --hue:var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+  font-size:32px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
