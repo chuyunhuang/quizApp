@@ -79,26 +79,43 @@ function selectAnswer(e) {
 
 }
 
+
 const questions = [
   {
-    question: 'Who is awesome?',
+    question: 'When a user views a page containing a JavaScript program, which machine actually executes the script?',
     answers: [
-      { text: 'me', correct: true },
-      { text: 'Chloe', correct: false }
+      { text: 'The User/s machine running a Web browser', correct: true },
+      { text: 'The Web server', correct: false }
     ]
   },
   {
-    question: '2+2?',
+    question: 'Which of the following is not a valid JavaScript variable name?',
     answers: [
-      { text: '4', correct: true },
-      { text: '8', correct: false }
+      { text: '2names', correct: true },
+      { text: '_first_and_last_names', correct: false },
+      { text: 'FirstAneLast', correct: false },
+      { text: 'None of the above', correct: false }
     ]
   },
   {
-    question: 'Are you happy',
+    question: 'What is the correct JavaScript syntax to write "Hello World"?',
     answers: [
-      { text: 'yes', correct: true },
-      { text: 'no', correct: false }
+      { text: 'document.write("Hello World")', correct: true },
+      { text: 'System.out.println("Hello World")', correct: false }
+    ]
+  },
+  {
+    question: 'Which is the correct way to write a JavaScript array?',
+    answers: [
+      { text: 'var txt = new Array("tim","kim","jim")', correct: true },
+      { text: 'var txt = new Array(1:"tim",2:"kim",3:"jim")', correct: false }
+    ]
+  },
+  {
+    question: 'What does the <noscript> tag do?',
+    answers: [
+      { text: 'Enclose text to be displayed by non-JavaScript browsers.', correct: true },
+      { text: 'Prevents scripts on the page from executing.', correct: false }
     ]
   }
 ]
